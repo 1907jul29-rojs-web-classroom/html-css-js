@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <strong>Email:</strong><a href="mailto:query@revature.com">query@revature.com</a><br>
+     <strong> Address: </strong><address>
+        11730, Plaza America Dr #205,
+        Reston, VA
+        USA, 20190
+    </address>
+    <strong>Web:</strong> <a href="www.revature.com">www.revature.com</a><br>
+    <strong>Phone:</strong> +1-730-111-2340
+    <br>
+    <p>For more enquires send us the this form</p>
+    <!-- HTML FORM: to take input from the user -->
+    <!-- HTML Form Controls/elements
+        Label: Its shows the caption of the input element
+        Input: text, button, submit, radio, checkbox, email, date, time, number.....
+        textarea: used have lots of words to submit
+    -->
+    <form action="C:\Revature\RBC\html-css-js\Html\Home.html" >
+        <label for="name">Name: </label>
+        <input id="name" type="text" required placeholder="Please enter your full name">
+        <br>
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="Please enter a valid email">
+        <br>
+        <label for="phone">Phone: </label>
+        <input id="phone" type="text">
+        <br>
+        <label for="gender">Gender:
+            <!-- Ctrl + [ is to indent out -->
+            <!-- Ctrl + ] is to indent in -->
+            <!-- Ctrl + C  Copy -->
+            <!-- Ctrl + V  Paste -->
+            <label for="male">Male
+                <input id="male" name="gender" type="radio">
+            </label>
+                <label for="female">Female
+                <input id="female" name="gender" type="radio">
+            </label>
+                <label for="Others">Others
+                <input id="Others" name="gender" type="radio">
+            </label><br>
+        </label>
+         <label for="query">Query Message: </label>   
+         <textarea id="query"></textarea><br>
+         <input type="checkbox">Remember me <br>
+        <input type="submit" value="Submit Query">
+        <input type="reset">
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h1>Enjoy this free video</h1>
+    <video width="600" height="400" src="https://ia800208.us.archive.org/4/items/Popeye_forPresident/Popeye_forPresident_512kb.mp4" controls></video>
+</body>
+</html>

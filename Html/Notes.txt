@@ -1,7 +1,7 @@
 Attributes: defines the behaviour of an element.
-where we place attributes : itbis places in the opening tag with a space after the name of the tag. We can also give value to the attribute after = sign (mostly in " ").
-Global attributes: these are applicable to all the html elements. Eg : id, class, name
-Local attributes: specific to elements. charset, src, href
+where we place attributes : it is placed in the opening tag with a space after the name of the tag. We can also give value to the attribute after = sign (mostly in " ").
+    Global attributes: these are applicable to all the html elements. Eg : id, class, name
+    Local attributes: specific to elements. charset, src, href
 
 Paths:
 Relative path: it points to the resource(image, link address...) within the current directory where the project is.
