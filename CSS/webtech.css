@@ -1,0 +1,31 @@
+h1{
+    background: rgb(145, 145, 212);
+}
+
+/* This is Id selector and will change the background of this id as orange */
+/* Id is unique for each html element */
+#orange{
+    background: orange;
+}
+#green{
+    background: green;
+}
+#blue{
+    background: blue;
+}
+/* class selector uses dot represntation .class */
+/* class is used to classify/categorise a group of elements together */
+.lightorange{
+    background: rgb(231, 199, 140);
+}
+.lightgreen{
+    background: rgb(161, 240, 161);
+}
+.lightblue{
+    background: rgb(161, 161, 231);
+}
+/* Combinators selectors */
+table,th,tr,td{
+    border-color: black;
+    border-style: solid ;
+}

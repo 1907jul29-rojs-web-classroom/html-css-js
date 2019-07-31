@@ -1,0 +1,36 @@
+CSS: 
+- Cascading Style Sheets.
+- CSS is used to make a web page look appealing to the user and hence it enhances 
+    the User Experience.
+
+- Where CSS is Applied 
+CSS is Applied to DOM (Document Object Model) tree after the Html is loaded.
+
+- How CSS is Applied
+    CSS is applied as CSS Rule/Ruleset
+    selector: a part of html dom tree where we want to apply the style. 
+   
+    [selector] {
+        property1:value1;
+        property2:value2
+    }
+
+    body {
+        background-color:yellow;
+        color:Red;
+    }
+- Different ways to apply CSS.
+    1. Inline : it is applied to the html element directly. We use global attribute style:"property:value"
+                It is always on highest priority.
+    2. Internal : They are CSS Rules applied in the style Tag. It is best practise to kwwp style tag in the <head> tag
+    3. External : This is the style applied to an external file with extension as .css.
+    Then we apply the style sheet to the .html file with a <link> tag
+    <link rel="stylesheet" type="text/css" href="path of the CSS">
+
+- Selectors:
+    where we want to apply the style.
+        - Simple Selectors : element{ property: value} , * { }
+        - Attribute Selectors :
+            id : #id
+            class : .class
+        - Combinator Selectors
