@@ -1,0 +1,44 @@
+JavaScript:
+- This is not Java
+- It is a programming language.
+- Majorly used for client-side unteraction (interaction with webpages) and also with 
+    some server side interation.
+- It is loosely typed language. because variables can hold any type of the value.
+- It is Dynamically typed.
+- JavaScript is interpreted. Means it runs code line by line.
+
+
+Where do you run JavaScript programs?
+- Any programming language requires environment/runtime (Program) to execute/run.
+- For JavaScript we need Browser Engine
+- IE/Edge -> Chakra
+- Mozilla- > Spider Monkey
+- Chrome -> V8
+
+History : 
+- LiveScript- first name
+- JavaScript - named it to make it as popular as Java
+- ECMAScript
+- ES5, ES6 -> ECMAScript 2015, ES9......
+
+What JavaScript can do?
+- Manipulate DOM (HTML): Eg create or remove html elements on fly
+- Manipulate design : change CSS 
+- Add behavior to web page : Animations, graphics etc....
+- Call server with JavaScript
+- interact with files 
+- You can store some values to client's machine (cache, cookies, localstorage, session storage)
+
+How we can apply JavaScript to a web page?
+- Inline : using event names
+- Internal : using Script tag and writing JS in the tag
+- External :using .js file for external JS and linking to the html using <Script src="path of the JS file"></Script>
+    This also make JS resuable for any other webpages.
+*It is always a best practise to keep JS at the end of the <body></body> tag*
+
+Events: Any action/user-defined action is called an event. Eg: mouse click, hover, page load etc....
+
+Variables : it is a placeholder to store any value. This value can be changed and in JS variables can have 
+value of any type, this is why we call JS as loosely typed. Eg: name ="Pushpinder Kaur"
+
+Constants : These are the values as well types which never change. Eg: pi = 3.14 
