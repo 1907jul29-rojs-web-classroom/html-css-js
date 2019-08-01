@@ -5,6 +5,7 @@ CSS:
 
 - Where CSS is Applied 
 CSS is Applied to DOM (Document Object Model) tree after the Html is loaded.
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works
 
 - How CSS is Applied
     CSS is applied as CSS Rule/Ruleset
@@ -14,32 +15,34 @@ CSS is Applied to DOM (Document Object Model) tree after the Html is loaded.
         property1:value1;
         property2:value2
     }
-
-    body {
-        background-color:yellow;
-        color:Red;
-    }
+    properties of CSS: background-color, color, font-size, font-family, border, border-color, text-align etc.......
+    Eg: body { -> selector
+            background-color:yellow; //property and its value
+            color:Red;
+         }
 - Different ways to apply CSS.
     1. Inline : it is applied to the html element directly. We use global attribute style:"property:value"
                 It is always on highest priority.
-    2. Internal : They are CSS Rules applied in the style Tag. It is best practise to keep style tag in the <head> tag
+    2. Internal : They are CSS Rules applied in the <style> </style> Tag. It is best practise to keep style 
+                tag in the <head> tag
     3. External : This is the style applied to an external file with extension as .css.
-    Then we apply the style sheet to the .html file with a <link> tag
-    <link rel="stylesheet" type="text/css" href="path of the CSS">
-    Applying External style sheet is the best practise as if we want to apply to  more than 1 page and changes can reflect to all the pages by changing the external style sheet.
+                Then we apply the style sheet to the .html file with a <link> tag. It is best practise to link CSS
+                in the <head> tag
+            <link rel="stylesheet" type="text/css" href="path of the CSS">
+            Applying External style sheet is the best practise as if we want to apply to  more than 1 page and changes can reflect to all the pages by changing the external style sheet.
 
-- Selectors:
-    where we want to apply the style.
-        - Simple Selectors : element{ property: value} , * { }
-        - Attribute Selectors :
-            id : #id
-            class : .class
-        - Combinator Selectors
-            - Descendant combinator : A B	- Any element matching B that is a 
-                descendant of an element matching A (that is, a child, or a child of
-                a child, etc.). the combinator is one or more spaces or dual greater than 
-                signs.
-            - Child combinator : A > B -	Any element matching B that is a direct child of 
-                an element matching A.  
-            - Adjacent sibling combinator :	A + B - Any element matching B that is the next 
-                sibling of an element matching A (that is, the next child of the same parent).   
+- Selectors:where we want to apply the style.
+    - Simple Selectors : element{ property: value}
+    - Universal selector : * { }
+    - Attribute Selectors :
+        id : #id
+        class : .class
+    - Combinator Selectors
+        - Descendant combinator : A B	- Any element matching B that is a 
+            descendant of an element matching A (that is, a child, or a child of
+            a child, etc.). the combinator is one or more spaces or dual greater than 
+            signs.
+        - Child combinator : A > B -	Any element matching B that is a direct child of 
+            an element matching A.  
+        - Adjacent sibling combinator :	A + B - Any element matching B that is the next 
+            sibling of an element matching A (that is, the next child of the same parent).   

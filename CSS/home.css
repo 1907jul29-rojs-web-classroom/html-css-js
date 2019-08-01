@@ -2,3 +2,27 @@ body{
     background-color:rgba(233, 87, 172, 0.719);
     color:crimson;
 }
+/* CSS Box Model
+    Content : Height and width
+    Padding : Padding space between content and the border
+    border : border/line over padding
+    Margin : outermost box over border 
+*/
+#englishmsg{
+    border: 1px; /*border applied to all 4 edges of the content T R B L*/
+    border-color: black;
+    border-style: solid;
+    text-align:left;
+    background-color: yellow;
+    /* padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px;/*padding applied to all 4 edges of the content T R B L*/
+    /* display: inline; This is going to change block behaviour of <p> to inline */
+    margin-left: 40px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+    width: 50%; /*sizes : can be in pixels (px), points (pts), percent (%), em , rem.....*/
+    height: 10%;
+}
