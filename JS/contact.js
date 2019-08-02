@@ -48,9 +48,9 @@ Object : customized type or user-defined type. Animal, Car, Person
 undefined: when no value is assigned or initialized to a variable
 Symbol : new datatype in ES6
 */
-var sayYesOrNo=true;
-var a=null;
-var b;
+var sayYesOrNo=true;//type of boolean
+var a=null; //type of object (because null is derived from object type)
+var b; // this is going to return undefined as there is no value assigned to it.
 console.log(typeof(a));// object
 console.log(b);
 console.log(typeof(a/0));//Number

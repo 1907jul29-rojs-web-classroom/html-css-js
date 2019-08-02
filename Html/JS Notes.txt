@@ -40,41 +40,6 @@ How we can apply JavaScript to a web page?
 Events: Any action/user-defined action is called an event. Eg: mouse click, hover, page load etc....
 
 Variables : it is a placeholder to store any value. This value can be changed and in JS variables can have 
-value of any type, this is why we call JS as loosely typed. Eg: name ="Pushpinder Kaur"
+value of any type, this is why we call JS as loosely typed. Eg: name ="Pushpinder Kaur", name=123
 
 Constants : These are the values as well types which never change. Eg: pi = 3.14 
-
-● Operators : 
-    Expressions : Operands and Operators 
-    Eg:1+2=3
-    LHS: 1 and 2 are operands, + is the operator.
-    RHS : Result
-
-    In JS there are different types of Operators:
-        1. Arithmatic Operators : Binary->[+, -, *, /, % (modulus-> gives remainder )], 
-            Eg: 1+7=8
-                a*b
-            Unary-> which is applied on single constant or variable
-               -a
-               ++a (pre-increment) 
-               a++ (post-increment)            
-        2. Logical Operators
-            Logical AND, OR, NOT, XOR, NOR...... Output based on Truth Table
-        3. Assignment Operators
-            = equals to
-            += 
-            *=
-            -=
-            /=
-        4. Comparison Operators
-            >,<,>=,<=,==,===(strict equality)
-        5. Conditional Operators / ternary operator
-            (condition)?true:false
-            1>2?hello:world
-
-● Truth Tables
-● Conditionals
-● Loops: for, while, do-while
-● Functions and Objects
-● Debugger Breakpoints in Devtools
-● Scopes (
