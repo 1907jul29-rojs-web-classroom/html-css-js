@@ -56,7 +56,7 @@ Constants : These are the values as well types which never change. Eg: pi = 3.14
                 a*b
             Unary-> which is applied on single constant or variable
                -a
-               ++a (pre-increment) 
+               ++a (pre-increment) a = a+1;
                a++ (post-increment)            
         2. Logical Operators
             Logical AND, OR, NOT, XOR, NOR...... Output based on Truth Table
@@ -73,8 +73,12 @@ Constants : These are the values as well types which never change. Eg: pi = 3.14
             1>2?hello:world
 
 ● Truth Tables
-● Conditionals
-● Loops: for, while, do-while
+● Conditionals : to check one or more conditions conditional statements are used
+    1. if
+    2. if-else
+    3. else-if
+    4. switch
 ● Functions and Objects
 ● Debugger Breakpoints in Devtools
-● Scopes (
+● Scopes 
+● Loops: for, while, do-while
