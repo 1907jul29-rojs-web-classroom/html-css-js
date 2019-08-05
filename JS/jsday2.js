@@ -99,14 +99,15 @@ switch (key) {
 // DRY- Donot repeat your code
 // with function you can encapsulate your logic and thus you can use it again and again
 // alert, prompt, console.log etc are predefined functions of JS
+// Encapsulate the logic of a program which can be re-used and makes the program modular
 
-function showmessage()// function declaration/specification
+/*function showmessage()// function declaration/specification
 {
- //function body
+ //function body - it contains the logic of the program
  console.log("Hello Everyone!!");
 }
 // Call a function
-showmessage();
+showmessage();*/
 
 // Function which adds 2 numbers
 //Typecasting means conversion of 1 type to another -> variable= Datatype1(Datatype2 value)
@@ -118,18 +119,19 @@ function Add(){
     result=num1+num2;
     console.log(result);
 }
-Add();*/
+Add();// calling the add function*/
 
 // Create a modular function
-function Addition(number1, number2){
+/*function Addition(number1, number2){
     return number1+ number2;// return keyword gives the output/result of the function
 }
 
-let output=Addition(50,70);
+let output=Addition(50,70);// to hold the output of function we can store it in a variable
+*/
 //console.log(output);
 
 // function to check even odd
-let number=prompt("Enter a number to check for even or odd");
+/*let number=prompt("Enter a number to check for even or odd");
 function evenorodd(num){
     if(num%2==0){
         console.log("Even");
@@ -138,8 +140,33 @@ function evenorodd(num){
         console.log("Odd");
     }
 }
-evenorodd(number);
+evenorodd(number);*/
 
 // Write a function in jS to:
 // 1. Check if a number is divisible by 3
+/*function checkdivisiblityby3(number){
+    if(number%3==0){
+        // ` -> backtick -> this with $ sign is used to extrapolate the string (means place any variable inside a string)
+        console.log(`${number} is divisible by 3`);
+    }
+    else {
+        console.log(`${number} is not divisible by 3`);
+    }
+}
+let numeral = prompt('please enter a number to check its divisibilty by 3');
+checkdivisiblityby3(numeral);*/
+
 // 2. Check if user is eligible to get a driver's license
+function iseligiblefordriverlicense(age){
+    if(age>=16){
+        console.log(`Age ${age} is elgible for getting a driver's license`);
+        return true;
+    }
+    else{
+        console.warn(`Age ${age} is not eligble for driver's license. Try at the age of 16` );
+        return false;
+    }
+}
+
+let age=prompt('What is your age?');
+iseligiblefordriverlicense(age);
