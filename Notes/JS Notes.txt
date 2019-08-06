@@ -78,7 +78,21 @@ Constants : These are the values as well types which never change. Eg: pi = 3.14
     2. if-else
     3. else-if
     4. switch
-● Functions and Objects
-● Debugger Breakpoints in Devtools
-● Scopes 
-● Loops: for, while, do-while
+● Functions :
+    - Named Functions
+    - Functions with Parameters
+    - Function which returns types
+    - Anonymous Functions
+    - Arrow Functions
+    - Callback Functions
+● Debugger Breakpoints in Devtools : As per Windows platform
+    - Step Over - F10
+    - Step In - F11
+    - Step Out - Shift + F1
+● Scopes : https://developer.mozilla.org/en-US/docs/Glossary/Scope
+● Arrays : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+● Loops: for, while, do-while : https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code
+● Objects : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
+● Introduction to DOM Manipulation :
+● Introduction to Event Handling
+● Implement Bubblesort (edited) 
