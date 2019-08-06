@@ -80,23 +80,75 @@ while (num<11);*/
 
 // ARRAYS: Data Structure which is used to store items (elements of an array) in contigious memory location
 //var marks = [];// this is an empty array
- var marks = [80,90, 25, 39, 98,92];
- console.log(`Length of array is ${marks.length}`);
- // to read any elements of an array we use index(position of that element)
- console.log(`first element ${marks[0]}`);
- console.log(`last element ${marks[marks.length-1]}`);
+var marks = [80, 90, 25, 39, 98, 92];
+console.log(`Length of array is ${marks.length}`);
+// to read any elements of an array we use index(position of that element)
+console.log(`first element ${marks[0]}`);
+console.log(`last element ${marks[marks.length - 1]}`);
 
- // to add/insert more elements into the array: Push
- //marks.push(78);
+// to add/insert more elements into the array: Push
+//marks.push(78);
 marks.pop();// this is used to remove an element from the array
- console.log(`Length of array is ${marks.length}`);
- console.log(`last element ${marks[marks.length-1]}`);
- 
- // how to read all elements of an array
- for(i=0;i<marks.length;i++){
-     console.log(marks[i]);
- }
+marks.unshift(88);// inserts the element from front;
+marks[3] = null;// remove element at postion 2 and replace it by null
+console.log(`Length of array is ${marks.length}`);
+console.log(`last element ${marks[marks.length - 1]}`);
+
+// how to read all elements of an array
+for (i = 0; i < marks.length; i++) {
+    console.log(marks[i]);
+}
 //  Given an array: var marks = [80,90, 25, 39, 98,92];
 //  1. Print the all the elements of the array in reverse order
 
 //  2. Print all even elements of the array
+
+
+// OBJECTS: All datatypes are derived from Object in JavaScript
+// Global Objects 
+//document
+// console.log(typeof document);
+// //window
+// console.log(typeof window);
+//     //window.alert()
+// //location
+// console.log(typeof location);
+// //console
+// console.log(typeof console);
+// // Array is also object
+// console.log(typeof console.log);
+
+// In JS you can create your own objects as well
+// using Object initializer way to create objects
+// var obj={}; // blank/empty object
+// console.log(typeof obj);
+// Anything which is a real time entity:
+// Object can have values (static or dynamic) and some behaviour (defines the action of the object)
+// Eg: Car can be created as an object
+// Values: wheels (fixed hence they are static values), glasses (fixed hence they are also static values),
+//          mileage (dynamic as it keeps on changing), speed (dynamic)
+// behaviour: Run (transport from one place to another), Shelter (covers you from bad weather)
+
+/*
+Employee:
+values: Static- name, ssn, id
+        dynamic- salary, position, performance
+behaviour: Work, Services, Deliverables, Ideas, Security
+*/
+
+var car ={
+    name:"Mazda 6",
+    wheels:5,
+    mileage:26,
+    speed:120,
+    Run:function () {
+        console.log('It runs on road and take me to destination ');
+    }
+};
+
+console.log(car.name);// call a property
+car.name="Audi";
+console.log(car.name);// call a property
+console.log(car.Run());// call a function
+
+// Create an employee object using above discussed properties and functions
