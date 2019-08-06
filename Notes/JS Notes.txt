@@ -95,4 +95,4 @@ Constants : These are the values as well types which never change. Eg: pi = 3.14
 ● Objects : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
 ● Introduction to DOM Manipulation :
 ● Introduction to Event Handling
-● Implement Bubblesort (edited) 
+● Implement Bubblesort 

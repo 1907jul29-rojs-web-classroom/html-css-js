@@ -231,6 +231,9 @@ console.log(checkevenodd(30));
 
 // IIFE with arrow function inside
 (()=>console.log('Hello World'))();
+// => this denotes arrow function
+// >= this denotes greater than equals to
+// <= this denotes less than equals to
 
 
 // CALLBACK FUNCTIONS: a function that can be passed as a paramter to calling function
