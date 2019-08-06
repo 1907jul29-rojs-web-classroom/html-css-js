@@ -157,8 +157,9 @@ let numeral = prompt('please enter a number to check its divisibilty by 3');
 checkdivisiblityby3(numeral);*/
 
 // 2. Check if user is eligible to get a driver's license
-function iseligiblefordriverlicense(age){
+/*function iseligiblefordriverlicense(age){
     if(age>=16){
+        //ES6 introduced string extrapolation which creates a placeholder for the variables that we want to place in the strings
         console.log(`Age ${age} is elgible for getting a driver's license`);
         return true;
     }
@@ -167,6 +168,79 @@ function iseligiblefordriverlicense(age){
         return false;
     }
 }
-
 let age=prompt('What is your age?');
-iseligiblefordriverlicense(age);
+iseligiblefordriverlicense(age);*/
+
+/*var name="pushpinder kaur";
+console.log(name.toUpperCase());
+
+var Name;// JS is case - sensitive
+
+var company="REVATURE";
+console.log(company.toLowerCase());
+*/
+
+// MORE ABOUT FUNCTIONS IN JS
+// Named functions
+// Named functions with parameters
+// Function which returns a value
+// ANONYMOUS FUNCTIONS - Functions without any name
+
+// Variable Show mesage holds the refernce of the anonymous function
+// They are used when we want them to be used/called/invoked for once i.e. we don't want them to be re-used
+/*var ShowMessage=function(name){
+    // strings with backtick is called template literal which are used for string interpolation
+    console.log(`Hello ${name}`);
+    //console.log('Hello ${name}');    
+}
+// Invoke/call a function
+// We can call the variable as a function to invoke anoymous function (because it hold the reference of anonymous function)
+console.log(ShowMessage);// this will return you the definition of the anonymous function
+ShowMessage("Pushpinder Kaur");*/
+
+// ES6 created shorthand for anonymous functions known as ARROW FUNCTIONS
+/*var showmsg=(name)=>console.log(`Hello ${name}`);
+showmsg("Fred Belotte");
+
+// ARROW FUNCTION WHICH RETURNS SOME COMPUTATION
+var addnums=(number1, number2)=>number1+number2;
+console.log(addnums(10,20));*/
+
+// ARROW FUNCTION TO CHECK FOR EVEN OR ODD
+// if arrow function need more than one line on RHS use { } to encapsulate the logic of the code
+/*var checkevenodd=(num)=>{
+    if(num%2==0)
+        return 'Even'; // one line statement after if block don't require {}, but more than one line statements need {}
+    else
+        return 'Odd';
+}
+console.log(checkevenodd(30));
+*/
+
+//IIFE : Immediate Invoked Function Expresions
+// A function which is called with its definition. These function don't need to be invoked/called explicitly
+// IIFE as Named function
+(function Welcome(){
+    console.log('Hello World');
+})();   
+
+// IIFE function as anonymous function
+(function(name){
+    console.log(`Hello ${name}`);
+})('Pushpinder Kaur');
+
+// IIFE with arrow function inside
+(()=>console.log('Hello World'))();
+
+
+// CALLBACK FUNCTIONS: a function that can be passed as a paramter to calling function
+// Callback functions are used with DOM events 
+function Combine(fName, mName, lName){
+    return `${fName} ${mName}  ${lName}`;
+}
+
+function Display(firstName, middleName, lastName, Combine){
+    return `Hello ${Combine(firstName,middleName,lastName)}`;
+}
+
+console.log(Display("Marc","S.", "Jacob",Combine));
