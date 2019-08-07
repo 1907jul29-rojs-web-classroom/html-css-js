@@ -93,6 +93,6 @@ Constants : These are the values as well types which never change. Eg: pi = 3.14
 ● Loops: for, while, do-while : https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code
 ● Arrays : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 ● Objects : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
-● Introduction to DOM Manipulation :
-● Introduction to Event Handling
+● Introduction to Event Handling : https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+● Introduction to DOM Manipulation : https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
 ● Implement Bubblesort 

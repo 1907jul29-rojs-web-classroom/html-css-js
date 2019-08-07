@@ -165,7 +165,9 @@ values: Static- name, ssn, id
 behaviour: Work, Services, Deliverables, Ideas, Security
 */
 // Create an employee object using above discussed properties and functions
+// const are the ones whose values dont change
 const name="Test Name";
+//name="test 2";// this will give error as const will not allow re-assigning of the values
 const ssn="1234567";
 const id="test@revature.com"
 var Employee1={
