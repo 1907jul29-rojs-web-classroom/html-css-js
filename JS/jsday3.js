@@ -65,7 +65,12 @@ while (num<11);*/
 //     num++;        
 // }
 
-// FOR LOOP is better version of while as it is convinient synatx wise
+// FOR LOOP is better version of while loop as it is convinient syntax wise
+/**
+ for(initialization of variable; condition to be checked; increment/decrement of variable initialized){
+     // logic 
+ }
+ */
 // console.log('In forward order');
 // for(num=1;num<11;num++){
 //     console.log(num);
@@ -74,6 +79,7 @@ while (num<11);*/
 // for(num=10;num>0;num--){
 //     console.log(num);
 // }
+
 // for(;;){// infinite for loop - and also a bad practise
 //     console.log('hello world');
 // }
@@ -100,10 +106,16 @@ for (i = 0; i < marks.length; i++) {
 }
 //  Given an array: var marks = [80,90, 25, 39, 98,92];
 //  1. Print the all the elements of the array in reverse order
-
+console.log("Read array in reverse order");
+for (let i = marks.length - 1; i > 0; i--) {
+    console.log(marks[i]);
+}
 //  2. Print all even elements of the array
-
-
+console.log("Print all even elements of the array")
+for (let i = 0; i < marks.length; i++) {
+    if(marks[i]%2==0 && marks[i] !=null && marks[i]!="")
+        console.log(marks[i]);
+}
 // OBJECTS: All datatypes are derived from Object in JavaScript
 // Global Objects 
 //document
@@ -129,26 +141,65 @@ for (i = 0; i < marks.length; i++) {
 //          mileage (dynamic as it keeps on changing), speed (dynamic)
 // behaviour: Run (transport from one place to another), Shelter (covers you from bad weather)
 
+
+
+var car = {
+    name: "Mazda 6",
+    wheels: 5,
+    mileage: 26,
+    speed: 120,
+    Run: function () {
+        console.log('It runs on road and take me to destination ');
+    }
+};
+
+console.log(car.name);// call a property
+car.name = "Audi";
+console.log(car.name);// call a property
+console.log(car.Run());// call a function
+
 /*
 Employee:
 values: Static- name, ssn, id
         dynamic- salary, position, performance
 behaviour: Work, Services, Deliverables, Ideas, Security
 */
-
-var car ={
-    name:"Mazda 6",
-    wheels:5,
-    mileage:26,
-    speed:120,
-    Run:function () {
-        console.log('It runs on road and take me to destination ');
-    }
-};
-
-console.log(car.name);// call a property
-car.name="Audi";
-console.log(car.name);// call a property
-console.log(car.Run());// call a function
-
 // Create an employee object using above discussed properties and functions
+const name="Test Name";
+const ssn="1234567";
+const id="test@revature.com"
+var Employee1={
+    name: name,
+    ssn:ssn,
+    id:id,
+    salary:2345.67,
+    position:"Junior developer",
+    performance:8.5,
+    work:function(){
+        console.log("Junior developer fixes small bugs of revpro");
+    },
+    services:function(){
+        console.log("fixing bugs, coordinating with senior team, attending daily scrum");
+    },
+    deliverables:function(){
+        console.log("Delievers bug fixes within due date, contributes to business values");
+    },
+    getInfo:function(){
+        console.log(`Name: ${Employee1.name} - SSN: ${Employee1.ssn} - Id: ${Employee1.id}\nPosition: ${Employee1.position}\nSalary: ${Employee1.salary}`);
+    }
+}
+
+console.log(Employee1.name);
+Employee1.getInfo();
+console.log('after promotion');
+Employee1.position="Developer";
+Employee1.salary=5467.89;
+Employee1.getInfo();
+Employee1.deliverables();
+
+// Add a function to employee object
+Employee1.Perks=function(){
+    console.log(`Revature employees are entitled for any free training based on their areas of interests`);
+}
+
+Employee1.Perks();
