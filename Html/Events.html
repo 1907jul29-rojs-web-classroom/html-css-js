@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Learning Events</title>
+    <style>
+        .mandatory{
+            color:red;
+        }
+    </style>
 </head>
+
 <body>
-   <h1>Let's learn about event handling in JavaScript</h1> 
-   <!-- Inline event: not a good practise  -->
+    <h1>Let's learn about event handling in JavaScript</h1>
+    <!-- Inline event: not a good practise  -->
     <!-- <input type="button" onclick="alert('hello world');" value="Click me"> -->
     <input type="button" id="btn1" value="Click me">
     <button id="btn2">See your Name</button><br>
@@ -18,6 +25,17 @@
     </ul>
     <br>
     <button id="btnAddCars">Add More Cars</button>
-   <script src="../JS/events.js"></script>
+    <hr>
+    <h3>Submit Request</h3>
+    <form action="">
+        <label for="name">Name</label><span class="mandatory">*</span> : <input id="name" placeholder="enter your fullname">
+        <br>
+        <label for="email">Email</label><span class="mandatory">*</span> : <input type="email" id="email" placeholder="enter your email">
+        <br>
+        <lable for="query">Query</lable><span class="mandatory">*</span> : <textarea name="query" id="query" cols="20" rows="7"
+            placeholder="enter your query"></textarea><br><br>
+        <button id="submit">Submit</button>
+    </form>
+    <script src="../JS/events.js"></script>
 </body>
 </html>
